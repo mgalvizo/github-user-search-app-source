@@ -1,0 +1,89 @@
+header {
+    margin-bottom: 35px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.header__button {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.header__button:hover {
+    transition: color 0.25s ease-in;
+    cursor: pointer;
+}
+
+.header__button:hover svg {
+    transition: fill 0.25s ease-in;
+}
+
+.header__button span {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    letter-spacing: 0.25rem;
+}
+
+.header__button svg {
+    margin-left: 16px;
+}
+
+/* LIGHT STYLES */
+
+.light .header__logo {
+    color: var(--lm-tertiary);
+}
+
+.light .header__button {
+    color: var(--lm-secondary);
+}
+
+.light .header__button:hover {
+    color: var(--lm-tertiary);
+}
+
+.light .header__button:hover svg {
+    fill: var(--lm-tertiary);
+}
+
+.light .header__button svg {
+    fill: var(--lm-secondary);
+}
+
+/* DARK STYLES */
+
+.dark .header__logo {
+    color: var(--dm-white);
+}
+
+.dark .header__button {
+    color: var(--dm-white);
+}
+
+.dark .header__button:hover {
+    color: var(--dm-header-buttom-hover);
+}
+
+.dark .header__button:hover svg {
+    fill: var(--dm-header-buttom-hover);
+}
+
+.dark .header__button svg {
+    fill: var(--dm-white);
+}
