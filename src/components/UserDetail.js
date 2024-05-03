@@ -40,10 +40,10 @@ const UserDetail = ({ user, error, isLoading }) => {
                     <div className="user-details__avatar">
                         <img
                             src={avatar_url}
-                            srcSet={`${avatar_url} 320w`}
                             alt="Avatar"
                             width="460"
                             height="460"
+                            loading="lazy"
                         />
                     </div>
                     <h1 className="user-details__name">
