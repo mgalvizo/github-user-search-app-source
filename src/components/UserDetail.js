@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as Location } from '../assets/icon-location.svg';
 import { ReactComponent as Website } from '../assets/icon-website.svg';
 import { ReactComponent as Twitter } from '../assets/icon-twitter.svg';
@@ -41,6 +40,7 @@ const UserDetail = ({ user, error, isLoading }) => {
                     <div className="user-details__avatar">
                         <img
                             src={avatar_url}
+                            srcSet={`${avatar_url} 320w`}
                             alt="Avatar"
                             width="460"
                             height="460"
