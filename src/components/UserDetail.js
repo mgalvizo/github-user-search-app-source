@@ -39,7 +39,12 @@ const UserDetail = ({ user, error, isLoading }) => {
             <div className="user-details__content">
                 <div className="user-details__general-info">
                     <div className="user-details__avatar">
-                        <img src={avatar_url} alt="Avatar" />
+                        <img
+                            src={avatar_url}
+                            alt="Avatar"
+                            width="460"
+                            height="460"
+                        />
                     </div>
                     <h1 className="user-details__name">
                         {name ? name : login}{' '}

@@ -16,6 +16,7 @@
 }
 
 .user-details__avatar img {
+    height: auto;
     border-radius: 50%;
 }
 
